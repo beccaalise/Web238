@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rebecca Cathey">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <title>Ways to Give</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html"><img src="naws.jpg" alt="Northland Animal Welfare Society Logo" class="logo"></a>
+                <button class="hamburger" aria-label="Toggle navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="giving.html">Ways to Give</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+  <Main>
+    <section id="gives" class="giving">
+      <div class="container">
+          <h2>Ways to Give</h2>
+      </div>
+    </section>
+    <section>
+      <div class="custom-pages">
+        <div class="custom-page-link">
+            <div class="custom-image-wrapper" id="image1">
+                <a href="#">
+                    <img src="img1.jpg" alt="Volunteering Image" class="custom-img-responsive" />
+                  </a>
+              </div>
+              <button class="custom-btn">Volunteering</button>
+              <p>Volunteering at the Northland Animal Welfare Society (NAWS) offers a rewarding opportunity to make a tangible difference in the lives of animals in need. Whether you're passionate about animal care, fundraising, or community outreach, there's a role for everyone. Volunteers assist with daily operations, such as feeding and socializing animals, cleaning kennels, and supporting adoption events. Your contribution helps NAWS provide vital services like spaying and neutering, vaccinations, and sheltering. Join us in creating a compassionate community where every animal receives the care and love they deserve.</p>
+          </div>
+          <div class="custom-page-link">
+            <div class="custom-image-wrapper" id="image2">
+                <a href="https://www.amazon.com/registry/wishlist/39X4G7VLHO9VE">
+                    <img src="img4.jpg" alt="Giving Image" class="custom-img-responsive" />
+                </a>
+              </div>
+              <button class="custom-btn">Amazon Smile</button>
+              <p>Amazon Smile is a simple and impactful way to support the Northland Animal Welfare Society (NAWS) while shopping on Amazon. When you shop through Amazon Smile, a portion of your eligible purchases is donated to NAWS at no extra cost to you. These donations help fund essential programs and services for animals in our care, including spaying and neutering, medical treatments, and adoption efforts. By selecting NAWS as your charity of choice on Amazon Smile, you're directly contributing to our mission of promoting animal welfare and providing a better future for pets in need. Join us in making a difference with every purchase you make.</p>
+          </div>
+          <div class="custom-page-link">
+            <div class="custom-image-wrapper" id="image3">
+                <a href="https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=P3CUDKWGQDYES&ssrt=1721792097835">
+                    <img src="img10.jpg" alt="Donate Image" class="custom-img-responsive" />
+                </a>
+              </div>
+              <button class="custom-btn">Monetary Donations</button>
+              <p>Monetary donations to the Northland Animal Welfare Society (NAWS) play a crucial role in supporting our mission to advocate for and care for animals in need. Your contributions enable us to provide essential services such as spaying and neutering, vaccinations, medical treatments, and sheltering for animals awaiting adoption. Every donation, no matter the size, directly impacts the lives of animals by ensuring they receive the care and attention they deserve. Your support helps us continue our efforts in promoting responsible pet ownership and creating a compassionate community for animals. Consider making a donation today to help us make a lasting difference in the lives of pets in our care.</p>
+          </div>
+      </div>
+  </section>
+  </Main>
+  <footer class="footer">
+      <div class="container">
+          <div class="footer-left">
+              <p>&copy; 2024 Northland Animal Welfare Society. All rights reserved.</p>
+          </div>
+          <div class="footer-right">
+              <div class="footer-section">
+                  <h4>Contact Information</h4>
+                  <ul>
+                      <li>6972 N Broadway, Gladstone, Mo 64118</li>
+                      <li>Phone: (816) 336-1888</li>
+                      <li>Email: info@example.com</li>
+                  </ul>
+              </div>
+              <div class="footer-section">
+                  <h4>Business Hours</h4>
+                  <ul>
+                      <li>Monday - Friday: 7:30am-4:30pm</li>
+                      <li>Saturday: 10:00 AM - 3:00 PM</li>
+                      <li>Sunday: Closed</li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </footer>
+  <script src="script.js"></script>
+    <script>
+        $(document).ready(function() {
+    // Image change on click
+    $('#image1').click(function() {
+        var img = $(this).find('img');
+        img.fadeOut(500, function() {
+            img.attr('src', 'img2.jpg'); // Change the image source
+            img.fadeIn(500); // Fade the image back in
+        });
+    });
+
+    $('#image2').click(function() {
+        var img = $(this).find('img');
+        img.fadeOut(500, function() {
+            img.attr('src', 'img5.jpg'); // Change the image source
+            img.fadeIn(500); // Fade the image back in
+        });
+    });
+
+    $('#image3').click(function() {
+        var img = $(this).find('img');
+        img.fadeOut(500, function() {
+            img.attr('src', 'img11.jpg'); // Change the image source
+            img.fadeIn(500); // Fade the image back in
+        });
+    });
+
+    // Hover effect on the images
+    $('.custom-image-wrapper').hover(
+        function() {
+            $(this).find('img').animate({ opacity: 0.7 }, 300); // On hover, reduce opacity
+        },
+        function() {
+            $(this).find('img').animate({ opacity: 1 }, 300); // On hover out, reset opacity
+        }
+    );
+});
+    </script>
+</body>
+</html>
