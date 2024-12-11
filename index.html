@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rebecca Cathey">
+    <title>Web 238 Ongoing Project</title>
+</head>
+<body>
+    <header>
+        <h1>Lab #1:Project &Inspiration</h1>
+    </header>
+    <main>
+        <p>I plan to do a website based on a nonprofit website as my dream job is to design websites for nonprofits. I looked at several websites for inspiration.</p>
+        <p>The first website I came across is one that I want to mention due to how intercate and interactive the design was. It was the resume/portfolio for Bruno Simon <a href="https://bruno-simon.com/"> view his site here.<a/> I thought it was really interesting but too complicated for my skill set to base this project on.</p>
+        <p>The website I believe I will take inspiration from is from Libby Peterson. <a href="https://www.libbypeterson.com/"> You can view her site here.</a> I really liked how it was a single page but still showcased her different experiences in different sections.</p>
+    </main>
+    <footer>
+    </footer>
+    <div style="height: 20px;"></div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rebecca Cathey">
+    <link rel="stylesheet" href="style.css">
+    <title>Lab #2</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <h1>Lab#2:</h1>
+<p>I set up initial CSS styles, added a little JS to help the nav be more responsive, and created content for the home, about and contact us page.</p>
+<p>I used jQuery to enhance the user experience by adding a hover effect to the images in the .page-link elements. When users hover over an image, its opacity decreases, providing visual feedback. This effect improves interactivity by clearly indicating which images are clickable. I achieved this using jQuery selectors to target .page-link and img elements, applying the opacity change on hover. This subtle visual enhancement makes the page feel more dynamic and encourages user engagement.</p>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html"><img src="naws.jpg" alt="Northland Animal Welfare Society Logo" class="logo"></a>
+                <button class="hamburger" aria-label="Toggle navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h2>Welcome to Northland Animal Welfare Society</h2>
+                <p>Educating and advocating for the humane treatment of animals while providing essential veterinary services and community support.</p>
+            </div>
+        </section>
+        <section>
+            <div class="pages">
+                <div class="page-link">
+                    <div class="image-wrapper">
+                        <a href="x">
+                            <img src="img5.jpg" alt="Services Image" class="img-responsive" />
+                        </a>
+                    </div>
+                    <button class="btn">Services</button>
+                </div>
+                <div class="page-link">
+                    <div class="image-wrapper">
+                        <a href="x">
+                            <img src="img4.jpg" alt="Giving Image" class="img-responsive" />
+                        </a>
+                    </div>
+                    <button class="btn">Giving</button>
+                </div>
+                <div class="page-link">
+                    <div class="image-wrapper">
+                        <a href="contact.html">
+                            <img src="img6.jpg" alt="Contact Image" class="img-responsive" />
+                        </a>
+                    </div>
+                    <button class="btn">Contact</button>
+                </div>
+            </div>
+        </section>
+        <section class="split-section">
+            <div class="split-section-left">
+                <img src="img2.jpg" alt="Image Description" class="img-responsive">
+            </div>
+            <div class="split-section-right">
+                <div class="text-container">
+                    <h2>Learn More About Us</h2>
+                    <p>The Northland Animal Welfare Society, Inc. ("NAWS") is a nonprofit 501(c)(3) organization that serves as a coalition for Clay and Platte counties dedicated to educating citizens regarding the humane treatment of animals. NAWS works to create awareness, regarding the need to reduce the number of homeless animals and to build a care and adoption campus so that every animal may live in a safe and caring environment.</p>
+                    <a href="about.html" class="btn">Learn More</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-left">
+                <p>&copy; 2024 Northland Animal Welfare Society. All rights reserved.</p>
+            </div>
+            <div class="footer-right">
+                <div class="footer-section">
+                    <h4>Contact Information</h4>
+                    <ul>
+                        <li>6972 N Broadway, Gladstone, Mo 64118</li>
+                        <li>Phone: (816) 336-1888</li>
+                        <li>Email: info@example.com</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Business Hours</h4>
+                    <ul>
+                        <li>Monday - Friday: 7:30am-4:30pm</li>
+                        <li>Saturday: 10:00 AM - 3:00 PM</li>
+                        <li>Sunday: Closed</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div style="height: 20px;"></div>
+    <script src="script.js"></script>
+    <script>
+    $(document).ready(function() {
+     // Hover effect: Change opacity on hover for images in the .page-link div
+     $('.page-link').hover(
+         function() {
+             $(this).find('img').stop().animate({ opacity: 0.7 }, 200);
+         },
+         function() {
+             $(this).find('img').stop().animate({ opacity: 1 }, 200);
+         }
+     );
+});</script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rebecca Cathey">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <title>Lab #3</title>
+</head>
+<body>
+    <h1>Lab#3</h1>
+<p>I finished the CSS page and added the services & giving pages.</p>
+<p>I decided to enhanced the services page by adding two features: a fade-in animation and a scroll-triggered interactive component. The fade-in effect gradually reveals the text in the <p> elements inside each .gallery-item as they enter the viewport while scrolling. This creates a smoother, more engaging user experience by ensuring the content appears dynamically instead of all at once. The scroll-triggered interaction allows users to control when the content becomes visible, making the page feel more responsive and interactive. Overall, these enhancements improve the visual appeal and user engagement, offering a more polished and dynamic experience.</p>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html"><img src="naws.jpg" alt="Northland Animal Welfare Society Logo" class="logo"></a>
+                <button class="hamburger" aria-label="Toggle navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="giving.html">Ways to Give</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h2>Welcome to Northland Animal Welfare Society</h2>
+                <p>Educating and advocating for the humane treatment of animals while providing essential veterinary services and community support.</p>
+            </div>
+        </section>
+        <section>
+            <div class="pages">
+                <div class="page-link">
+                    <div class="image-wrapper">
+                        <a href="services.html">
+                            <img src="img5.jpg" alt="Services Image" class="img-responsive" />
+                        </a>
+                    </div>
+                    <button class="btn">Services</button>
+                </div>
+                <div class="page-link">
+                    <div class="image-wrapper">
+                        <a href="giving.html">
+                            <img src="img4.jpg" alt="Giving Image" class="img-responsive" />
+                        </a>
+                    </div>
+                    <button class="btn">Giving</button>
+                </div>
+                <div class="page-link">
+                    <div class="image-wrapper">
+                        <a href="contact.html">
+                            <img src="img6.jpg" alt="Contact Image" class="img-responsive" />
+                        </a>
+                    </div>
+                    <button class="btn">Contact</button>
+                </div>
+            </div>
+        </section>
+        <section class="split-section">
+            <div class="split-section-left">
+                <img src="img2.jpg" alt="Image Description" class="img-responsive">
+            </div>
+            <div class="split-section-right">
+                <div class="text-container">
+                    <h2>Learn More About Us</h2>
+                    <p>The Northland Animal Welfare Society, Inc. ("NAWS") is a nonprofit 501(c)(3) organization that serves as a coalition for Clay and Platte counties dedicated to educating citizens regarding the humane treatment of animals. NAWS works to create awareness, regarding the need to reduce the number of homeless animals and to build a care and adoption campus so that every animal may live in a safe and caring environment.</p>
+                    <a href="about.html" class="btn">Learn More</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-left">
+                <p>&copy; 2024 Northland Animal Welfare Society. All rights reserved.</p>
+            </div>
+            <div class="footer-right">
+                <div class="footer-section">
+                    <h4>Contact Information</h4>
+                    <ul>
+                        <li>6972 N Broadway, Gladstone, Mo 64118</li>
+                        <li>Phone: (816) 336-1888</li>
+                        <li>Email: info@example.com</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Business Hours</h4>
+                    <ul>
+                        <li>Monday - Friday: 7:30am-4:30pm</li>
+                        <li>Saturday: 10:00 AM - 3:00 PM</li>
+                        <li>Sunday: Closed</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div style="height: 20px;"></div>
+    <script src="script.js"></script>
+    <script>
+    $(document).ready(function() {
+     // Hover effect: Change opacity on hover for images in the .page-link div
+     $('.page-link').hover(
+         function() {
+             $(this).find('img').stop().animate({ opacity: 0.7 }, 200);
+         },
+         function() {
+             $(this).find('img').stop().animate({ opacity: 1 }, 200);
+         }
+     );
+});</script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rebecca Cathey">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <title>Lab #4</title>
+</head>
+<body>
+    <h1>Lab#4</h1>
+<p>The interactive component I created for the "Ways to Give" section features clickable images and hover effects to enhance user engagement. Clicking an image triggers a fade transition, showcasing different donation options, while hovering reduces the image's opacity for subtle visual feedback. I chose this component to make the page more engaging and visually dynamic, encouraging users to interact with the donation options. The smooth animations align with the site's clean aesthetic, drawing attention to calls to action and improving the overall user experience.</p>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html"><img src="naws.jpg" alt="Northland Animal Welfare Society Logo" class="logo"></a>
+                <button class="hamburger" aria-label="Toggle navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="giving.html">Ways to Give</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h2>Welcome to Northland Animal Welfare Society</h2>
+                <p>Educating and advocating for the humane treatment of animals while providing essential veterinary services and community support.</p>
+            </div>
+        </section>
+        <section>
+            <div class="pages">
+                <div class="page-link">
+                    <div class="image-wrapper">
+                        <a href="services.html">
+                            <img src="img5.jpg" alt="Services Image" class="img-responsive" />
+                        </a>
+                    </div>
+                    <button class="btn">Services</button>
+                </div>
+                <div class="page-link">
+                    <div class="image-wrapper">
+                        <a href="giving.html">
+                            <img src="img4.jpg" alt="Giving Image" class="img-responsive" />
+                        </a>
+                    </div>
+                    <button class="btn">Giving</button>
+                </div>
+                <div class="page-link">
+                    <div class="image-wrapper">
+                        <a href="contact.html">
+                            <img src="img6.jpg" alt="Contact Image" class="img-responsive" />
+                        </a>
+                    </div>
+                    <button class="btn">Contact</button>
+                </div>
+            </div>
+        </section>
+        <section class="split-section">
+            <div class="split-section-left">
+                <img src="img2.jpg" alt="Image Description" class="img-responsive">
+            </div>
+            <div class="split-section-right">
+                <div class="text-container">
+                    <h2>Learn More About Us</h2>
+                    <p>The Northland Animal Welfare Society, Inc. ("NAWS") is a nonprofit 501(c)(3) organization that serves as a coalition for Clay and Platte counties dedicated to educating citizens regarding the humane treatment of animals. NAWS works to create awareness, regarding the need to reduce the number of homeless animals and to build a care and adoption campus so that every animal may live in a safe and caring environment.</p>
+                    <a href="about.html" class="btn">Learn More</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-left">
+                <p>&copy; 2024 Northland Animal Welfare Society. All rights reserved.</p>
+            </div>
+            <div class="footer-right">
+                <div class="footer-section">
+                    <h4>Contact Information</h4>
+                    <ul>
+                        <li>6972 N Broadway, Gladstone, Mo 64118</li>
+                        <li>Phone: (816) 336-1888</li>
+                        <li>Email: info@example.com</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Business Hours</h4>
+                    <ul>
+                        <li>Monday - Friday: 7:30am-4:30pm</li>
+                        <li>Saturday: 10:00 AM - 3:00 PM</li>
+                        <li>Sunday: Closed</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div style="height: 20px;"></div>
+    <script src="script.js"></script>
+    <script>
+    $(document).ready(function() {
+     // Hover effect: Change opacity on hover for images in the .page-link div
+     $('.page-link').hover(
+         function() {
+             $(this).find('img').stop().animate({ opacity: 0.7 }, 200);
+         },
+         function() {
+             $(this).find('img').stop().animate({ opacity: 1 }, 200);
+         }
+     );
+});</script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rebecca Cathey">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <title>Lab #5</title>
+</head>
+<body>
+    <h1>Lab#5</h1>
+<p>The interactive component I chose for lab #5 is the accordion and I chose to use it on the services page. I implemented this to improve content usability and organization. The accordion allows users to easily navigate through different services by expanding or collapsing sections as needed, keeping the page clean and focused. This dynamic interaction reduces visual clutter, making it easier for users to find the information they need without being overwhelmed by long paragraphs of text. Using jQuery, the accordion provides smooth transitions, enhancing the overall user experience while maintaining a simple and accessible layout. Also to maintain consistency between past labs, I updated the jquery code so that instead of the p element fading in, the images would.</p>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html"><img src="naws.jpg" alt="Northland Animal Welfare Society Logo" class="logo"></a>
+                <button class="hamburger" aria-label="Toggle navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="giving.html">Ways to Give</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h2>Welcome to Northland Animal Welfare Society</h2>
+                <p>Educating and advocating for the humane treatment of animals while providing essential veterinary services and community support.</p>
+            </div>
+        </section>
+        <section>
+            <div class="pages">
+                <div class="page-link">
+                    <div class="image-wrapper">
+                        <a href="services.html">
+                            <img src="img5.jpg" alt="Services Image" class="img-responsive" />
+                        </a>
+                    </div>
+                    <button class="btn">Services</button>
+                </div>
+                <div class="page-link">
+                    <div class="image-wrapper">
+                        <a href="giving.html">
+                            <img src="img4.jpg" alt="Giving Image" class="img-responsive" />
+                        </a>
+                    </div>
+                    <button class="btn">Giving</button>
+                </div>
+                <div class="page-link">
+                    <div class="image-wrapper">
+                        <a href="contact.html">
+                            <img src="img6.jpg" alt="Contact Image" class="img-responsive" />
+                        </a>
+                    </div>
+                    <button class="btn">Contact</button>
+                </div>
+            </div>
+        </section>
+        <section class="split-section">
+            <div class="split-section-left">
+                <img src="img2.jpg" alt="Image Description" class="img-responsive">
+            </div>
+            <div class="split-section-right">
+                <div class="text-container">
+                    <h2>Learn More About Us</h2>
+                    <p>The Northland Animal Welfare Society, Inc. ("NAWS") is a nonprofit 501(c)(3) organization that serves as a coalition for Clay and Platte counties dedicated to educating citizens regarding the humane treatment of animals. NAWS works to create awareness, regarding the need to reduce the number of homeless animals and to build a care and adoption campus so that every animal may live in a safe and caring environment.</p>
+                    <a href="about.html" class="btn">Learn More</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-left">
+                <p>&copy; 2024 Northland Animal Welfare Society. All rights reserved.</p>
+            </div>
+            <div class="footer-right">
+                <div class="footer-section">
+                    <h4>Contact Information</h4>
+                    <ul>
+                        <li>6972 N Broadway, Gladstone, Mo 64118</li>
+                        <li>Phone: (816) 336-1888</li>
+                        <li>Email: info@example.com</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Business Hours</h4>
+                    <ul>
+                        <li>Monday - Friday: 7:30am-4:30pm</li>
+                        <li>Saturday: 10:00 AM - 3:00 PM</li>
+                        <li>Sunday: Closed</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div style="height: 20px;"></div>
+    <script src="script.js"></script>
+    <script>
+    $(document).ready(function() {
+     // Hover effect: Change opacity on hover for images in the .page-link div
+     $('.page-link').hover(
+         function() {
+             $(this).find('img').stop().animate({ opacity: 0.7 }, 200);
+         },
+         function() {
+             $(this).find('img').stop().animate({ opacity: 1 }, 200);
+         }
+     );
+});</script>
+</body>
+</html>
