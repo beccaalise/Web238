@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rebecca Cathey">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <title>Services Lab#3</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html"><img src="naws.jpg" alt="Northland Animal Welfare Society Logo" class="logo"></a>
+                <button class="hamburger" aria-label="Toggle navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="giving.html">Ways to Give</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <Main>
+        <section id="services" class="serves">
+            <div class="container">
+                <h2>Services</h2>
+            </div>
+          </section>
+        <section>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <div class="image-wrapper">
+                        <img src="img5.jpg" alt="Veterinary Services Image" class="img-responsive" />
+                    </div>
+                    <h3>Veterinary Services</h3>
+                    <p> The veterinary clinic provides essential services catering to various needs, including spaying and neutering, vaccinations, and microchipping for cats, dogs, non-profit rescue groups, and feral cats. These services are crucial for maintaining the health and well-being of pets, ensuring they lead happy and safe lives. Whether it's preventive care through vaccinations or enhancing identification with microchips, our clinic is dedicated to supporting both individual pet owners and community welfare initiatives.</p>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-wrapper">
+                        <img src="img7.jpeg" alt="Grooming Image" class="img-responsive" />
+                    </div>
+                    <h3>Grooming</h3>
+                    <p>Our grooming services cater to both cats and dogs, offering a range of essential treatments to keep your pets looking and feeling their best. We provide baths to maintain cleanliness, professional haircuts tailored to breed standards or owner preference, precise nail trims to ensure comfort and health, thorough ear cleanings for hygiene, and combo outs for comprehensive grooming sessions. Whether your pet needs a routine grooming session or specific treatments, our expert groomers are committed to providing gentle care and top-notch service to enhance your pet's well-being and appearance.</p>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-wrapper">
+                        <img src="img9.jpg" alt="TNR Image" class="img-responsive" />
+                    </div>
+                    <h3>Trap Neuter Release</h3>
+                    <p>TNR, or trap-neuter-return, is the humane method recommended for managing and reducing feral and free-roaming cat populations. Feral cats, born and raised in the wild or abandoned, live independently and typically avoid human contact. Managed colonies where these cats are spayed, neutered, vaccinated, and provided with food, water, and shelter allow them to live contentedly. However, outdoor life poses risks. NAWS Low Cost Spay & Neuter Clinic offers essential services for free-roaming cats, including spaying, neutering, vaccinations, and ear tipping for identification. You can support community cats by learning about TNR and using humane traps to bring them to the clinic for necessary care.</p>
+                </div>
+            </div>
+        </section>
+    </Main>
+    <footer class="footer">
+      <div class="container">
+          <div class="footer-left">
+              <p>&copy; 2024 Northland Animal Welfare Society. All rights reserved.</p>
+          </div>
+          <div class="footer-right">
+              <div class="footer-section">
+                  <h4>Contact Information</h4>
+                  <ul>
+                      <li>6972 N Broadway, Gladstone, Mo 64118</li>
+                      <li>Phone: (816) 336-1888</li>
+                      <li>Email: info@example.com</li>
+                  </ul>
+              </div>
+              <div class="footer-section">
+                  <h4>Business Hours</h4>
+                  <ul>
+                      <li>Monday - Friday: 7:30am-4:30pm</li>
+                      <li>Saturday: 10:00 AM - 3:00 PM</li>
+                      <li>Sunday: Closed</li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+    // jQuery document ready function
+    $(document).ready(function() {
+        // Scroll event
+        $(window).on('scroll', function() {
+            // Loop through each .gallery-item p tag
+            $('.gallery-item p').each(function() {
+                var elementTop = $(this).offset().top; // Get the top position of the element
+                var windowBottom = $(window).scrollTop() + $(window).height(); // Get the current viewport bottom
+                // If the element is in the viewport, fade it in
+                if (elementTop < windowBottom) {
+                    $(this).fadeIn(1000);  // Fade in over 1 second
+                }
+            });
+        });
+    });
+    </script>
+    <div style="height: 20px;"></div>
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rebecca Cathey">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <title>Services Lab#5</title>
+</head>
+<body>
+    <h1>Lab#5</h1>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html"><img src="naws.jpg" alt="Northland Animal Welfare Society Logo" class="logo"></a>
+                <button class="hamburger" aria-label="Toggle navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="giving.html">Ways to Give</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="services" class="serves">
+            <div class="container">
+                <h2>Services</h2>
+            </div>
+          </section>
+        <section>
+    <div class="gallery">
+        <div class="gallery-item2">
+            <div class="image-wrapper">
+                <img src="img5.jpg" alt="Veterinary Services Image" class="img-responsive" />
+            </div>
+            <h3 class="accordion-toggle">Veterinary Services</h3>
+            <div class="accordion-content">
+                <p>The veterinary clinic provides essential services catering to various needs, including spaying and neutering, vaccinations, and microchipping for cats, dogs, non-profit rescue groups, and feral cats. These services are crucial for maintaining the health and well-being of pets, ensuring they lead happy and safe lives. Whether it's preventive care through vaccinations or enhancing identification with microchips, our clinic is dedicated to supporting both individual pet owners and community welfare initiatives.</p>
+            </div>
+        </div>
+        <div class="gallery-item2">
+            <div class="image-wrapper">
+                <img src="img7.jpeg" alt="Grooming Image" class="img-responsive" />
+            </div>
+            <h3 class="accordion-toggle">Grooming</h3>
+            <div class="accordion-content">
+                <p>Our grooming services cater to both cats and dogs, offering a range of essential treatments to keep your pets looking and feeling their best. We provide baths to maintain cleanliness, professional haircuts tailored to breed standards or owner preference, precise nail trims to ensure comfort and health, thorough ear cleanings for hygiene, and combo outs for comprehensive grooming sessions. Whether your pet needs a routine grooming session or specific treatments, our expert groomers are committed to providing gentle care and top-notch service to enhance your pet's well-being and appearance.</p>
+            </div>
+        </div>
+        <div class="gallery-item2">
+            <div class="image-wrapper">
+                <img src="img9.jpg" alt="TNR Image" class="img-responsive" />
+            </div>
+            <h3 class="accordion-toggle">Trap Neuter Release</h3>
+            <div class="accordion-content">
+                <p>TNR, or trap-neuter-return, is the humane method recommended for managing and reducing feral and free-roaming cat populations. Feral cats, born and raised in the wild or abandoned, live independently and typically avoid human contact. Managed colonies where these cats are spayed, neutered, vaccinated, and provided with food, water, and shelter allow them to live contentedly. However, outdoor life poses risks. NAWS Low Cost Spay & Neuter Clinic offers essential services for free-roaming cats, including spaying, neutering, vaccinations, and ear tipping for identification. You can support community cats by learning about TNR and using humane traps to bring them to the clinic for necessary care.</p>
+            </div>
+        </div>
+    </div>
+</section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+          <div class="footer-left">
+              <p>&copy; 2024 Northland Animal Welfare Society. All rights reserved.</p>
+          </div>
+          <div class="footer-right">
+              <div class="footer-section">
+                  <h4>Contact Information</h4>
+                  <ul>
+                      <li>6972 N Broadway, Gladstone, Mo 64118</li>
+                      <li>Phone: (816) 336-1888</li>
+                      <li>Email: info@example.com</li>
+                  </ul>
+              </div>
+              <div class="footer-section">
+                  <h4>Business Hours</h4>
+                  <ul>
+                      <li>Monday - Friday: 7:30am-4:30pm</li>
+                      <li>Saturday: 10:00 AM - 3:00 PM</li>
+                      <li>Sunday: Closed</li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+ $(document).ready(function() {
+    // Hide images initially
+    $('.gallery-item2 img').hide();
+
+    // Existing scroll functionality
+    $(window).on('scroll', function() {
+        $('.gallery-item2 img').each(function() {
+            var elementTop = $(this).offset().top; // Get the image's position from the top
+            var windowBottom = $(window).scrollTop() + $(window).height(); // Get the window's bottom position
+            
+            // If the image is within the window's viewport
+            if (elementTop < windowBottom) {
+                $(this).fadeIn(1000); // Fade in the image
+            }
+        });
+    });
+
+    // Accordion functionality
+    $('.accordion-toggle').on('click', function() {
+        // Toggle the visibility of the related content
+        var content = $(this).next('.accordion-content');
+        content.slideToggle(300); // Slide the content up or down
+    });
+});
+    </script>
+  </body>
+</html>
